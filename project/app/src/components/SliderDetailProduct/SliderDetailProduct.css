@@ -1,0 +1,217 @@
+/* Arrows */
+
+.slider-detail_product .slick-prev:focus,
+.slider-detail_product .slick-next:focus {
+  color: transparent;
+  outline: none;
+  /* background: transparent; */
+}
+.slider-detail_product .slick-prev:hover:before,
+.slider-detail_product .slick-prev:focus:before,
+.slider-detail_product .slick-next:hover:before,
+.slider-detail_product .slick-next:focus:before {
+  opacity: 1;
+}
+.slider-detail_product .slick-prev.slick-disabled:before,
+.slider-detail_product .slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+.slider-detail_product .slick-prev:before,
+.slider-detail_product .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* стилизация слайдов */
+.wrap-two-sliders {
+  max-width: 580px;
+  width: 100%;
+  position: relative;
+  position: absolute; 
+}
+.slider-detail_product {
+  max-width: 580px;
+  width: 100%;
+  height: 430px;
+  order: 2;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;  
+  box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+}
+.slider-detail_product .slide {
+  width: 100%;
+}
+/* убирает обводку */
+.slider-detail_product .slide > div > div {
+  outline: none;
+}
+
+.slider-detail_product .slide img {
+  width: 100%;
+  display: block;
+  height: 430px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Dots */
+.slider-detail_product .slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+.slider-detail_product .slick-dots {
+  position: absolute;
+  bottom: 25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.slider-detail_product .slick-dots li {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slider-detail_product .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 3px;
+  padding: 4px;
+  cursor: pointer;
+  color: transparent;
+  border: 1px solid #fffefe;
+  outline: none;
+  background-color: #afb0b0;
+  background: inherit;
+}
+.slider-detail_product .slick-dots .slick-active button {
+  background-color: #fffefe;
+}
+.slider-detail_product .slick-dots li button:hover,
+.slider-detail_product .slick-dots li button:focus {
+}
+
+
+
+/* мини-слайдер */
+.slider-mimi_detail_product {
+  max-width: 460px;
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  align-items: center;
+  top: 315px;
+  right: -580px;
+  border-radius: 5px;
+}
+/* убирает обводку */
+.slider-mimi_detail_product .slick-slide > div > div {
+  outline: none;
+}
+
+.slider-mimi_detail_product .slide-mini {
+  max-width: 135px;
+  width: 100%;
+  height: 120px;
+  position: relative;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.slider-mimi_detail_product .slick-current > div > div > .slide-mini {
+ 
+}
+.slider-mimi_detail_product .slick-current > div > div > .slide-mini img{
+  box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+}
+
+.slider-mimi_detail_product .slide-mini img {
+  max-width: 150px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.slider-text {
+  max-width: 135px;
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #fff;
+  background: #3a3938d8;
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.slider-mimi_detail_product .slick-prev,
+.slider-mimi_detail_product .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 2;
+}
+.slider-mimi_detail_product .slick-prev {
+  left: 7px;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  /* display: inline-flex; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: rotate(90deg);
+  background: url("svg-icon-arrow-prev-gray.svg") no-repeat 50% 50%;
+}
+.slider-mimi_detail_product .slick-next {
+  right: 5px;
+  bottom: -40px;
+  top: inherit;
+  width: 50px;
+  height: 50px;
+  /* display: inline-flex; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: rotate(90deg);
+  background: url("svg-icon-arrow-next-gray.svg") no-repeat 50% 50%;
+}
+
