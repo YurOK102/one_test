@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import Layout from '../layout/layout'
+import Layout from '../layout/Layout'
 import Infoblock from '../components/Infoblock'
 import SliderDetailProduct from '../components/SliderDetailProduct/SliderDetailProduct.js'
 
