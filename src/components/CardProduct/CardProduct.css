@@ -1,0 +1,163 @@
+.main-content {
+   max-width: 320px;
+   width: 100%;
+   margin-top: 30px;
+   /* display: flex; */
+   /* justify-content: space-between; */
+}
+
+.main-disabled {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: 1;
+   background: linear-gradient(135deg, transparent 30px, rgba(242, 242, 242, 0.6) 0) top left,
+   linear-gradient(-135deg, transparent, rgba(242, 242, 242, 0.6) 0) top right,
+   linear-gradient(-45deg, transparent, rgba(242, 242, 242, 0.6) 0) bottom right,
+   linear-gradient(45deg, transparent, rgba(242, 242, 242, 0.6) 0) bottom left;
+   background-size: 50% 50%;
+   background-repeat: no-repeat;
+   border-radius: 10px;
+}
+.product-card {
+   max-width: 320px;
+   width: 100%;
+   height: 480px;
+   position: relative;
+}
+.default {
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.card-title {
+   position: absolute;
+   top: 20px;
+   left: 45px;
+}
+.product-portions {
+   font-family: 'Trebuchet MS';
+   font-size: 14px;
+   color: #666666;
+}
+.product-title {
+   font-family: 'Trebuchet MS';
+   font-size: 16px;
+   color: #666666;
+}
+.product-question {
+   font-family: 'Trebuchet MS';
+   font-size: 16px;
+   color: #e62e7a;
+}
+.cat-images {
+   max-width: 260px;
+   width: 100%;
+   position: absolute;
+   top: 207px;
+   left: 4px;
+   border-bottom-left-radius: 8px;
+   overflow: hidden;   
+}
+.cat {
+   display: block;
+   width: 100%;
+}
+.text-container {
+   width: 100%;
+   position: absolute;
+   bottom: -35px;
+   left: 50%;
+   transform: translateX(-50%);
+   color: #fff;
+}
+.buy-btn {
+   background: transparent;
+   border: none;
+   outline: none;
+   color: #fff;
+   display: flex;
+}
+.buy-btn p {
+   border-bottom: 1px dashed #1698d9;
+   cursor: pointer;
+   color: #1698d9;
+   line-height: 14px;
+}
+.text-buy {
+   font-family: 'Trebuchet MS';
+   font-size: 13px;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.text-discription {
+   font-family: 'Trebuchet MS';
+   font-size: 13px;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.text-disabled {
+   font-family: 'Trebuchet MS';
+   font-size: 13px;
+   color: #ffff66;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+
+
+
+
+@media(max-width: 1366px) {
+   .main-content {
+      margin: 30px 30px;
+   }
+}
+
+@media(max-width: 576px) {
+   .main-content {
+      margin: 20px 0 30px 0;
+   }
+   .text-container {
+      bottom: -33px;
+   }
+}
+
+@media(max-width: 375px) {
+   .main-content {
+      max-width: 290px;
+   }
+   .product-title {
+      font-size: 14px;
+   }
+   .product-question {
+      font-size: 14px;
+   }
+   .product-name {
+      font-size: 44px;
+   }
+   .product-portions {
+      font-size: 13px;
+   }
+   .card-title {
+      left: 40px;
+   }
+   .cat-images {
+      max-width: 230px;
+      top: 193px;
+   }
+   .weight {
+      bottom: 60px;
+   }
+   .product-card {
+      height: 435px;
+   }
+}
